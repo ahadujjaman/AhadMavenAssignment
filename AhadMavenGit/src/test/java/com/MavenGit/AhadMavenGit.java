@@ -17,7 +17,7 @@ public class AhadMavenGit {
 		
 		chromedriver.get("https://wwwapps.ups.com/doapp/signup");
 		chromedriver.manage().window().maximize();
-		chromedriver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS); //Three 3types of wait --Implicit, explicit, fluent wait;
+		chromedriver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		System.out.println(chromedriver.getTitle());
 		
 		WebElement cookies = chromedriver.findElement(By.xpath("//*[@id=\"__tealiumImplicitmodal\"]/div/button/span[1]"));
